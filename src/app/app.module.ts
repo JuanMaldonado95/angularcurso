@@ -6,19 +6,22 @@ import { AppComponent } from './app.component';
 
 import { HeroesModule } from './heroes/heroes.modulo';
 import { ContadorModule } from './contador/contador.module';
+import { DbzModule } from './dbz/dbz.module';
+
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HeroesModule,
-    ContadorModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HeroesModule,
+        ContadorModule,
+        DbzModule,
+    ]
 })
 export class AppModule { }
